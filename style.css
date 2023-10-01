@@ -1,5 +1,4 @@
 @import "navbar.css";
-@import "presentation.css";
 
 :root {
     --dark: #333333;
@@ -44,6 +43,39 @@ body {
     height: 100%;
 }
 
+/* ------ Presentation ------ */
+
+.presentation {
+    max-width:50%;
+    margin: 0 auto;
+}
+
+.presentation h1 {
+    font-size: 2rem;
+    margin: 15px;
+}
+
+.presentation h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.presentation p {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: var(--grey);
+    font-style: italic;
+}
+
+.presentation .profile_img {
+
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 200px;
+    height: 200px;
+}
+
+/* ------ Réalisations ------ */
 
 .realisations {
     padding-top: 100px;
@@ -76,6 +108,7 @@ body {
     background-color: var(--light);
 }
 
+/* ------ Entreprise ------ */
 
 .entreprise {
     background-color: var(--grey);
@@ -128,6 +161,7 @@ body {
     color: var(--dark);
 }
 
+/* ------- Veille ------- */
 
 .veille {
     background-color: var(--dark);
@@ -140,16 +174,14 @@ body {
     padding-bottom: 100px;
 }
 
-.veille .content
-{
+.veille .content {
     text-align: center;
     margin: 10px;
     padding: 10px;
     width: 50%;
 }
 
-.veille .content .element
-{
+.veille .content .element {
     margin: 10px;
     padding: 10px;
     background-color: var(--grey);
@@ -177,3 +209,30 @@ body {
 }
 
 
+@media screen and (max-width: 1000px) {
+
+    .presentation {
+        max-width: 90%;
+    }
+
+    .realisations .left {
+        width: 100%;
+    }
+
+    .realisations .right {
+        width: 100%;
+    }
+
+    .entreprise .infos {
+        width: 100%;
+    }
+
+    .entreprise .infos .key_number {
+        max-width: 100%;
+
+    }
+    .veille .content {
+        width: 100%;
+    }
+
+}
