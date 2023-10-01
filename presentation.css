@@ -1,0 +1,31 @@
+
+.presentation
+{
+    max-width:50%;
+    margin: 0 auto;
+}
+
+.presentation h1 {
+    font-size: 2rem;
+    margin: 15px;
+}
+
+.presentation h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.presentation p {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: var(--grey);
+    font-style: italic;
+}
+
+.presentation .profile_img {
+
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 200px;
+    height: 200px;
+}

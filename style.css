@@ -1,4 +1,5 @@
 @import "navbar.css";
+@import "presentation.css";
 
 :root {
     --dark: #333333;
@@ -22,6 +23,13 @@ body {
 
 .container {
     width: 100%;
+    min-height: 100vh;
+    height:fit-content;
+    margin-top: 0px;
+}
+
+.first {
+    width: 100%;
     height: calc(100vh - 75px);
     margin-top: 10px;
 }
@@ -36,51 +44,136 @@ body {
     height: 100%;
 }
 
-.presentation
-{
-    width:50%;
-    margin: 0 auto;
-}
-
-.presentation h1 {
-    font-size: 2rem;
-    margin: 15px;
-}
-
-.presentation h2 {
-    font-size: 1.5rem;
-    margin: 10px;
-}
-
-.presentation p {
-    font-size: 1rem;
-    margin-top: 20px;
-    color: var(--grey);
-    font-style: italic;
-}
-
-.presentation .profile_img {
-
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 200px;
-    height: 200px;
-}
-
 
 .realisations {
+    padding-top: 100px;
+    flex-direction: row;
+    align-items: start;
+    min-height: calc(100vh - 100px);
+    height:fit-content;
     background-color: var(--pink);
+    padding-bottom: 100px;
 }
 
-.experiences {
+.realisations .left {
+    float: left;
+    width: calc(50% - 100px);
+    height: calc(100% - 100px);
 
+}
+
+.realisations .right {
+    float: right;
+    width: calc(50% - 100px);
+    height: calc(100% - 100px);
+}
+
+.realisations .project {
+    border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--light);
+}
+
+
+.entreprise {
     background-color: var(--grey);
     color: var(--light);
-
+    padding-top: 100px;
+    flex-direction: row;
+    align-items: start;
+    min-height: calc(100vh - 100px);
+    height:fit-content;
+    padding-bottom: 100px;
 }
+
+.entreprise .infos {
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--light);
+    color: var(--dark);
+    width: 50%;
+}
+
+.entreprise .infos .entreprise_img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 50px 0px;
+}
+
+.entreprise .infos p {
+    margin-top: 20px;
+    font-style: italic;
+    text-align: left;
+}
+
+.entreprise .infos .key_number {
+    display: inline-block;
+    text-align: center;
+    /* center */
+    max-width: 25%;
+    margin: 10px auto;
+
+    overflow: hidden;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
 
 .veille {
-
     background-color: var(--dark);
     color: var(--green);
+    padding-top: 100px;
+    flex-direction: row;
+    align-items: start;
+    min-height: calc(100vh - 100px);
+    height:fit-content;
+    padding-bottom: 100px;
 }
+
+.veille .content
+{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.veille .content .element
+{
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--grey);
+    color: var(--light);
+    border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.veille .content .element h1 {
+    font-style : normal;
+    font-size: 1.5rem;
+    color: var(--green);
+}
+
+.veille .content .element h2 {
+    font-style : italic;
+    font-size: 1rem;
+    color: var(--dark);
+}
+
+.veille .content .element p {
+    font-style : normal;
+    font-size: 1rem;
+    color: var(--light);
+}
+
+
