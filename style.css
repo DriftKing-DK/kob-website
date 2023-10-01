@@ -235,4 +235,13 @@ body {
         width: 100%;
     }
 
-}
+    li a {
+        font-size: 0.8rem;
+        padding: 10px 11px;
+    }
+
+    .navbar {
+        width: 100vw;
+    }
+
+    }
